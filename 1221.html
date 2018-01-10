@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Earth</title>
+	<style>
+		.container{
+			width: 600px;
+			margin: 40px auto;
+			padding: 20px;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			background-color: #8157B2;
+		}
+		.box {
+			background-color: #1FCF2F;
+			height: 200px;
+			width: 200px;
+			margin: 40px auto;
+			padding: 50px;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			border-radius: 50%;
+			color: #0E0C0C;
+			z-index: 999;
+			text-align: center;
+			line-height: 100px;
+			animation: box 4s infinite alternate linear;
+			/*animation-delay: 2s; 2s後開始 */
+			position: relative;
+			/*慢出快入*/
+			-webkit-animation-timing-function: ease-in-out;
+			-o-animation-timing-function: ease-in-out;
+			animation-timing-function: ease-in-out;
+		}
+		@keyframes box{
+			from{background-color: #1FCF2F;
+				border-radius: 100px;
+				top: 0;
+				left: 0;
+			}
+			to{background-color: tomato;
+				border-radius: 5px;
+				top: 100px;
+				left: 200px;
+
+			}
+		}
+		.box2{
+			background-color: blue;
+			width: 200px;
+			height: 200px;
+			color: white;
+		}
+		.box2:hover{
+			background-color: red;
+			width: 300px;
+			height: 300px;
+			/*transition: all 2s ease-in;  == transition-timing-function: ease-in;*/
+			transition: width 8s, height 2s; background-color 20s;
+		}
+			
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1></h1>
+		<div class="box">BOX!</div>
+		<div class="box2">box2</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>first JQuery</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<style>
+		#circle{
+			width: 100px;
+			height: 100px;
+			background-color: green;
+			border-radius: 50%;
+		}
+		.square{
+			width: 100px;
+			height: 100px;
+			background-color: tomato;
+			margin-top: 10px;
+		}
+	</style>
+	<script>
+		// if(typeof jQuery != "undefined"){
+		// 	alert("jq is installed!");
+		// }
+		// else{
+		// 	alert("jq is not installed!"); //因為沒有連結到jq 所以if判斷句裡面根本無從考證 --> undefined，所以才改成上面那樣
+		// }
+
+		$(".square").click(function(){
+			console.log("click");
+			// $("#circle").hide();
+		})
+	</script>
+</head>
+<body>
+	<div id="circle"></div>
+	<div class="square"></div>
+	<div class="square"></div>
+</body>
+</html>

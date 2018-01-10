@@ -1,0 +1,12 @@
+﻿a:visited{
+	連結如果點過之後，可以設置的一些東西
+}
+
+陰影:
+box-shadow: -10px上下 -20px左右 20px擴散 -15px離中間距離，縮小放大  #333;
+也可以設定字體的影子。 text-shadow: 0 2px 5px blue, 0 2px 10px red;
+
+自動分段(分成左中右這樣)
+column-count:3; 三段  column-gap: 40px; 每個分段的距離
+column-rule-style: dashed; 線的樣式
+column-rule-color: red; 顏色

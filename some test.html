@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- <meta http-equiv="refresh" content="2, url = actionTest.html">  --> <!-- 到某個文件html，content是時間。  javascript:window.history.go(-1) 是到瀏覽器的上一頁-->
+</head>
+<body>
+	<script>
+		// if(!+[1,]){
+		// 	alert("這是");
+		// }
+		// else{
+		// 	alert("這不是");
+		// }
+		console.log(+new Date());
+		function list() {
+			return Array.prototype.slice.call(arguments);
+		}
+		var list1 = list(1,2,3);
+		console.log(list1);
+		console.log(typeof arguments);
+		var a = -3 || 3;
+		console.log(a);
+		var b = 10;
+		console.log((b++)- 1);//先執行 b-1，在執行 b = b+1
+		var i = -2;
+		// /^-\d+$.test(i); //聽說可以驗證是否為負數 
+		// location.replace("actionTest.html"); 跳到該網頁，而且不給回來
+		// window.opener.location.reload();
+	</script>
+</body>
+</html>

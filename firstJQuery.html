@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>first JQuery</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<style>
+		#circle{
+			width: 100px;
+			height: 100px;
+			background-color: green;
+			border-radius: 50%;
+		}
+		#circle2{
+			width: 100px;
+			height: 100px;
+			background-color: #F1C720;
+			border-radius: 50px;
+			margin-top: 15px;
+		}
+		.square{
+			width: 100px;
+			height: 100px;
+			background-color: tomato;
+			margin-top: 10px;
+			/*transition: all 5s;*/
+		}
+		.goBlue{
+			background-color: #172DC5;
+			width: 200px;
+			height: 200px;
+			border-radius: 100px;
+		}
+	</style>
+	<script>
+		// if(typeof jQuery != "undefined"){
+		// 	alert("jq is installed!");
+		// }
+		// else{
+		// 	alert("jq is not installed!"); //因為沒有連結到jq 所以if判斷句裡面根本無從考證 --> undefined，所以才改成上面那樣
+		// }
+		$(function(){
+			$("#circle").click(function(){
+				alert($("p").html());
+				$("p").html("fuck");
+			})
+			$(".square").click(function(){
+				console.log($(this).width());
+				// $(this).addClass("goBlue");
+				$(this).fadeOut(1000, function(){
+					alert("fade out");
+				});
+			})
+			$("#circle2").click(function(){
+				$(this).animate({ //只有數值類可以設定，所以顏色無法設定
+					width: "300px",
+					height:"300px",
+					borderRadius: "0px",
+				},1500);
+			})
+		})
+	</script>
+</head>
+<body>
+	<div id="circle"></div>
+	<div id="circle2"></div>
+	<p>This is some text</p>
+	<div class="square"></div>
+	<div class="square"></div>
+</body>
+</html>

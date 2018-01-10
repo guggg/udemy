@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>1221-JS</title>
+</head>
+<body>
+	<style>
+		#fourthDiv{
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			background-color: #fda;
+		}
+	</style>
+	<button id="textChange">change text</button>
+	<div id="firstDiv">this is changed text</div>
+	<button id="textAppend">append text</button>
+	<div id="secondDiv">Javascript is</div>
+	<button id="textCreator">create text</button>
+	<div id="thirdDiv"></div>
+
+	<div id="fourthDiv"></div>
+	<button id="textCircle">Hide circle</button>
+	
+	<p id="text">some text</p>
+	<script type = "text/javascript">
+		document.getElementById("text").innerHTML = "fuck you";
+		document.getElementById("textChange").onclick = function(){
+			document.getElementById("firstDiv").innerHTML = "it's changed";
+
+		}
+		document.getElementById("textAppend").onclick = function(){
+			document.getElementById("secondDiv").innerHTML = document.getElementById("secondDiv").innerHTML + " insane";
+
+		}
+		document.getElementById("textCreator").onclick = function(){
+			document.getElementById("thirdDiv").innerHTML = "<ul><li>dog</li><li>cat</li><li>banana</li><li>apple</li></ul>"
+
+		}
+		document.getElementById("textCircle").onclick = function(){
+			document.getElementById("fourthDiv").style.display = "none";
+
+		}
+	</script>
+</body>
+</html>

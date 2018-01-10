@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Learning JQuery UI</title>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<style>
+		.square{
+			width: 200px;
+			height: 200px;
+			background-color: #000;
+		}
+		.resizable{
+			width: 300px;
+			height: 300px;
+			background-color: #131FA0;
+		}
+		.height200{
+			height: 100px;
+		}
+	</style>
+	<script>
+		$(function(){
+			$(".square").draggable();
+			$(".resizable").droppable({
+				drop: function(ui,event){
+					alert("Drop");
+				}
+			});
+			$(".accordion").accordion();
+			$("ul").sortable();
+		})
+	</script>
+</head>
+<body>
+	<div class="square"></div>
+	<div class="resizable">123</div>
+	<button id = "showNumber">show number</button>
+	<ul>
+		<li>pizza</li>
+		<li>hamburger</li>
+		<li>hot dog</li>
+		<li>Peace out</li>
+	</ul>
+	<div class="accordion">
+		<h3>title</h3>
+		<div class = "height200">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maiores facere eos. Omnis modi expedita sapiente culpa vitae totam unde possimus officiis delectus natus in ipsa, nesciunt, voluptas ab eos.</p>
+		</div>
+		<h3>title</h3>
+		<div class = "height200">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maiores facere eos. Omnis modi expedita sapiente culpa vitae totam unde possimus officiis delectus natus in ipsa, nesciunt, voluptas ab eos.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maiores facere eos. Omnis modi expedita sapiente culpa vitae totam unde possimus officiis delectus natus in ipsa, nesciunt, voluptas ab eos.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maiores facere eos. Omnis modi expedita sapiente culpa vitae totam unde possimus officiis delectus natus in ipsa, nesciunt, voluptas ab eos.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maiores facere eos. Omnis modi expedita sapiente culpa vitae totam unde possimus officiis delectus natus in ipsa, nesciunt, voluptas ab eos.</p>
+		</div>
+		<h3>title</h3>
+		<div class = "height200">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maiores facere eos. Omnis modi expedita sapiente culpa vitae totam unde possimus officiis delectus natus in ipsa, nesciunt, voluptas ab eos.</p>
+		</div>
+		<h3>title</h3>
+		<div class = "height200">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maiores facere eos. Omnis modi expedita sapiente culpa vitae totam unde possimus officiis delectus natus in ipsa, nesciunt, voluptas ab eos.</p>
+		</div>
+		<h3>title</h3>
+		<div class = "height200">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maiores facere eos. Omnis modi expedita sapiente culpa vitae totam unde possimus officiis delectus natus in ipsa, nesciunt, voluptas ab eos.</p>
+		</div>
+		<h3>title</h3>
+		<div class = "height200">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maiores facere eos. Omnis modi expedita sapiente culpa vitae totam unde possimus officiis delectus natus in ipsa, nesciunt, voluptas ab eos.</p>
+		</div>
+		<h3>title</h3>
+		<div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maiores facere eos. Omnis modi expedita sapiente culpa vitae totam unde possimus officiis delectus natus in ipsa, nesciunt, voluptas ab eos.</p>
+		</div>
+		<h3>title</h3>
+		<div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maiores facere eos. Omnis modi expedita sapiente culpa vitae totam unde possimus officiis delectus natus in ipsa, nesciunt, voluptas ab eos.</p>
+		</div>
+		<h3>title</h3>
+		<div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maiores facere eos. Omnis modi expedita sapiente culpa vitae totam unde possimus officiis delectus natus in ipsa, nesciunt, voluptas ab eos.</p>
+		</div>
+		<h3>title</h3>
+		<div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maiores facere eos. Omnis modi expedita sapiente culpa vitae totam unde possimus officiis delectus natus in ipsa, nesciunt, voluptas ab eos.</p>
+		</div>
+		<h3>title</h3>
+		<div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maiores facere eos. Omnis modi expedita sapiente culpa vitae totam unde possimus officiis delectus natus in ipsa, nesciunt, voluptas ab eos.</p>
+		</div>
+		<h3>title</h3>
+		<div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maiores facere eos. Omnis modi expedita sapiente culpa vitae totam unde possimus officiis delectus natus in ipsa, nesciunt, voluptas ab eos.</p>
+		</div>
+	</div>
+</body>
+</html>
